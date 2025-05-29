@@ -3,7 +3,7 @@
 
 ## 📁 `parqueadero/README.md`
 
-```markdown
+
 # Sistema de Parqueadero – Proyecto en Python
 
 ## Nombre del estudiante
