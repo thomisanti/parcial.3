@@ -36,7 +36,7 @@ No se implementaron desarrollos adicionales en este proyecto. Solo se desarrolla
 
 ## Cómo ejecutar
 
-```bash
+
 python parqueadero.py
 
 # Batalla de Pokémon – Proyecto en C++
