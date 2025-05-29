@@ -7,7 +7,7 @@
 # Sistema de Parqueadero – Proyecto en Python
 
 ## Nombre del estudiante
-[Escribe aquí tu nombre completo]
+Thomas Santiago Guzmán Páez
 
 ---
 
