@@ -52,9 +52,10 @@ El sistema permite al usuario registrar vehículos, llevar el control del tiempo
 # Batalla de Pokémon – Proyecto en C++
 
 
+
 ## Descripción
 
-Este proyecto simula una batalla por turnos entre dos Pokémon. El jugador puede elegir los ataques durante el combate a través de un menú textual en consola. El sistema permite visualizar la vida restante de los Pokémon y termina el combate correctamente cuando uno de ellos pierde todos sus puntos de vida.
+Este proyecto implementa una simulación de combate por turnos entre dos Pokémon utilizando el lenguaje C++. Se incluyeron características adicionales como tipos de Pokémon y un sistema de experiencia y niveles para enriquecer la lógica del juego.
 
 ---
 
@@ -62,40 +63,51 @@ Este proyecto simula una batalla por turnos entre dos Pokémon. El jugador puede
 
 - Lenguaje obligatorio: C++
 - Sistema de combate por turnos
-- Menú textual para elegir ataques
-- Cada Pokémon tiene dos ataques diferentes
-- El combate finaliza correctamente cuando uno pierde
-- Se anuncia el ganador al final
+- Menú textual con impresión por consola
+- Cada Pokémon tiene al menos dos ataques distintos
+- El combate finaliza cuando uno queda sin vida
+- Se anuncia el ganador correctamente
 
 ---
 
 ## Desarrollo adicional
 
-No se implementaron desarrollos adicionales. Este proyecto cumple exclusivamente con los requisitos mínimos establecidos en el parcial.
+### ¿Para qué se implementó?
+
+Se implementaron las siguientes funcionalidades adicionales:
+- Sistema de tipos (Fuego, Agua, Planta)
+- Sistema de experiencia y niveles
+
+Estas características se añadieron para simular mejor la lógica original de los juegos de Pokémon, y para demostrar la posibilidad de extender el sistema básico hacia una experiencia más completa y escalable.
 
 ---
 
-## ¿Para qué se implementó?
+### ¿Por qué se consideró necesario?
 
-Este sistema se implementó como una simulación básica de un combate de Pokémon. Su propósito es demostrar la lógica de turnos, el manejo de estructuras de datos simples (`struct`) y el control de flujo mediante condiciones y ciclos.
-
----
-
-## ¿Por qué se consideró necesario?
-
-Porque es una forma directa y comprensible de representar el concepto de un videojuego por turnos. También permite practicar estructuras de datos, entrada/salida por consola y funciones básicas en C++.
+Porque los requisitos mínimos solo permiten un sistema simple. Con estas mejoras:
+- El daño ahora depende de la efectividad del tipo de ataque.
+- El Pokémon que gana puede subir de nivel y aumentar su HP.
+- Se demuestra una mejor comprensión del diseño orientado a objetos y lógica de juego.
 
 ---
 
-## ¿Cómo se llevó a cabo su implementación?
+### ¿Cómo se llevó a cabo su implementación?
 
-- Se definieron estructuras (`struct`) para representar ataques y Pokémon.
-- Se programó una función que muestra los ataques disponibles y permite al jugador elegir.
-- El combate se realiza en un ciclo `while` que alterna los turnos entre dos Pokémon hasta que uno queda sin vida.
-- Se imprime en consola quién gana la batalla.
+1. **Sistema de tipos:**  
+   Se agregó una función llamada `calcularMultiplicador` que determina el daño adicional o reducido según el tipo del ataque y del defensor (ej: fuego es fuerte contra planta).
+
+2. **Experiencia y niveles:**  
+   Se agregaron atributos `experiencia` y `nivel` a la clase `Pokemon`.  
+   El ganador de una batalla recibe 100 puntos de experiencia. Si llega a 100, sube de nivel y gana +10 HP automáticamente.
+
+3. **Lógica de combate adaptada:**  
+   Se modificó la función `batalla` para integrar estas mejoras y mostrar mensajes adicionales al subir de nivel.
 
 ---
 
-## Compilación y ejecución
+## Cómo compilar y ejecutar
 
-Compilar en consola con:
+```bash
+g++ pokemon.cpp -o batalla
+./batalla
+
