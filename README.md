@@ -1,103 +1,51 @@
 
----
+# Parcial – Corte 3  
+Proyectos: Batalla de Pokémon (C++) y Parqueadero (Python)
 
-## 📁 `parqueadero/README.md`
-
-
-# Sistema de Parqueadero – Proyecto en Python
-
-## Nombre del estudiante
-Thomas Santiago Guzmán Páez
+## Nombres completos de los integrantes
+Thomas Santiago Guzman Paez 
+(Trabajo realizado de forma individual)
 
 ---
 
-## Descripción
+## Proyecto 1: Batalla de Pokémon (C++)
 
-Este proyecto simula el funcionamiento de un parqueadero básico utilizando una matriz de 8x8 y programación en Python. El sistema permite registrar vehículos, controlar el tiempo de permanencia y calcular el valor a pagar al momento de la salida.
+No se implementaron desarrollos adicionales.  
+Este proyecto cumple únicamente con los requisitos mínimos solicitados:
 
----
-
-## Requisitos mínimos cumplidos
-
-- Lenguaje obligatorio: Python
-- Mapa de al menos 8x8
-- Entrada y salida visibles en el mapa
-- Registro de vehículos con placa y hora de entrada
-- Sistema de cobro por tiempo
-- Visualización del estado del parqueadero (libres y ocupados)
-
----
-
-## Desarrollo adicional
-
-No se implementaron desarrollos adicionales en este proyecto. Solo se desarrollaron los requisitos mínimos solicitados.
-
----
-
-## Cómo ejecutar
-
-
-python parqueadero.py
-
-# Batalla de Pokémon – Proyecto en C++
-
-
-
-## Descripción
-
-Este proyecto implementa una simulación de combate por turnos entre dos Pokémon utilizando el lenguaje C++. Se incluyeron características adicionales como tipos de Pokémon y un sistema de experiencia y niveles para enriquecer la lógica del juego.
-
----
-
-## Requisitos mínimos cumplidos
-
-- Lenguaje obligatorio: C++
-- Sistema de combate por turnos
+- Combate por turnos entre dos Pokémon
+- Cada uno con dos ataques
 - Menú textual con impresión por consola
-- Cada Pokémon tiene al menos dos ataques distintos
-- El combate finaliza cuando uno queda sin vida
-- Se anuncia el ganador correctamente
+- Finalización del combate al quedar sin vida
+- Anuncio del ganador
 
 ---
 
-## Desarrollo adicional
+## Proyecto 2: Sistema de Parqueadero (Python)
 
-### ¿Para qué se implementó?
+No se implementaron desarrollos adicionales.  
+Este proyecto cumple únicamente con los requisitos mínimos solicitados:
 
-Se implementaron las siguientes funcionalidades adicionales:
-- Sistema de tipos (Fuego, Agua, Planta)
-- Sistema de experiencia y niveles
-
-Estas características se añadieron para simular mejor la lógica original de los juegos de Pokémon, y para demostrar la posibilidad de extender el sistema básico hacia una experiencia más completa y escalable.
-
----
-
-### ¿Por qué se consideró necesario?
-
-Porque los requisitos mínimos solo permiten un sistema simple. Con estas mejoras:
-- El daño ahora depende de la efectividad del tipo de ataque.
-- El Pokémon que gana puede subir de nivel y aumentar su HP.
-- Se demuestra una mejor comprensión del diseño orientado a objetos y lógica de juego.
+- Mapa de parqueadero de 8x8 con entrada y salida
+- Registro de vehículos con placa y hora de entrada
+- Cálculo de tarifa según tiempo de permanencia
+- Visualización del estado del parqueadero (espacios ocupados y libres)
 
 ---
 
-### ¿Cómo se llevó a cabo su implementación?
+## Referencias
 
-1. **Sistema de tipos:**  
-   Se agregó una función llamada `calcularMultiplicador` que determina el daño adicional o reducido según el tipo del ataque y del defensor (ej: fuego es fuerte contra planta).
+- Documentación oficial de C++  
+  https://en.cppreference.com/
 
-2. **Experiencia y niveles:**  
-   Se agregaron atributos `experiencia` y `nivel` a la clase `Pokemon`.  
-   El ganador de una batalla recibe 100 puntos de experiencia. Si llega a 100, sube de nivel y gana +10 HP automáticamente.
+- Documentación oficial de Python 3  
+  https://docs.python.org/3/
 
-3. **Lógica de combate adaptada:**  
-   Se modificó la función `batalla` para integrar estas mejoras y mostrar mensajes adicionales al subir de nivel.
+- Introducción a vectores en C++ – GeeksforGeeks  
+  https://www.geeksforgeeks.org/vectors-in-cpp-stl/
 
----
+- Uso de listas y estructuras en Python – W3Schools  
+  https://www.w3schools.com/python/python_lists.asp
 
-## Cómo compilar y ejecutar
-
-```bash
-g++ pokemon.cpp -o batalla
-./batalla
-
+- Entrada y salida con datetime en Python – GeeksforGeeks  
+  https://www.geeksforgeeks.org/python-datetime-module/
